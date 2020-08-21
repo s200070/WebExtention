@@ -11,12 +11,116 @@ body {
     list-style-type: none;
 }
 
-.profile {
-    padding: 16px;
-    border: 1px solid #095cdc;
+<!--画像クリックで学科紹介へ-->
+a:hover img {
+    opacity: 1.5;
 }
-.main-style {
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 0;
+
+a:hover .frame {
+    border: 1px solid #ccc;
+}
+
+a:active {
+    color: #4ca4e8;
+}
+
+
+
+<!--画像横並び-->
+.wrapper {
+    overflow: hidden;
+}
+.item {
+    float: left;
+    margin: 8px 0 8px 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 396px;
+}
+
+<!--科色-->
+.important {
+    color: #001aff;
+}
+
+
+.ryota {
+    color: #001af0;
+}
+
+#box2 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #47ffff;
+}
+.box2 h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.box3 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #ffcdcd;
+}
+.box3 h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.box5 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
+}
+.box5 p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.box7 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #474747;
+    background: whitesmoke;
+    border-left: double 7px #4ec4d3;
+}
+.box7 h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.box10 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #FFF;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.box10 p {
+    margin: 0;
+    padding: 0;
+}
+
+.lead {
+    font-weight: bold;
+}
+
+.headline {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #8fbac8;
+    padding: 8px;
 }
