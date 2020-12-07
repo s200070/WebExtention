@@ -1,13 +1,18 @@
 @charset "utf-8";
 body {
 	margin: 0;
+	color: #444;
+}
+.container {
+	margin:0 auto 0 auto;
+	max-width: 1000px;
 }
 
-.container{
-	margin:0 auto 0 auto;
-	padding:0 16px 0 16px;
-	width: 1000px;
+section .container {
+	display: flex;
+	flex-flow: column;
 }
+
 
 .header-inner{
 	padding: 10px 10px 0 10px;
@@ -20,15 +25,20 @@ body {
 	background: #0086f9;
 }
 
-.main-inner{
+main {
 	padding: 20px 10px 20px 10px;
 	background: #fffde3;
 	height: 400px;
 }
 
-.sidebar-inner{
+.sidebar{
 	padding: 20px 10px 20px 10px;
 	background: #c0f5b9;
+}
+
+.sidebar-inner {
+	background : #c0f5b9;
+	padding: 20px 10px 20px 10px;
 }
 
 .footer-inner{
@@ -38,9 +48,10 @@ body {
 
 body{
 	color: #444;
+	margin: 0;
 }
 
-main p: last-child{
+main p: last-child {
 	margin-bottom: 0;
 }
 
@@ -53,9 +64,28 @@ main p: last-child{
 
 
 nav {
-	margin-bottom:20px;
+
 }
 footer {
-	margin-top: 20px;
+	
 }
 
+@media only screen and (min-width: 768px) {
+	section .container{
+		flex-flow:row;
+	}
+	main {
+		flex: 1 1 auto;
+		order:2;
+	}
+	.sidebar1 {
+		flex:0 0 200px;
+		order:1;
+	}
+	.sidebar2 {
+		flex: 0 0 250px;
+		order: 3;
+	}
+
+	.
+}
